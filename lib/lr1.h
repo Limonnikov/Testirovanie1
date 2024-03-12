@@ -1,5 +1,9 @@
 #pragma once
-
+#include <string>
 #include <vector>
+#include <unordered_map>
+#include <set>
+#include <algorithm>
+using namespace std;
 
-std::pair<int, int> countAndSum(const std::vector<int>& array);
+vector <pair<pair<int, float>, int> >   func(vector<float>& array);
