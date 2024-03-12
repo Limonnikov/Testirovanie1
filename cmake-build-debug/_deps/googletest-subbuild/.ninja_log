@@ -1,0 +1,21 @@
+# ninja log v5
+1	124	7306541941253277	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	8cdfcfa33c7a4dcb
+1	124	7306541941253277	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	8cdfcfa33c7a4dcb
+125	12239	7306542062397686	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	488a08535aa6690d
+125	12239	7306542062397686	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	488a08535aa6690d
+12240	12567	0	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	3004686b1fb73cf1
+12240	12567	0	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	3004686b1fb73cf1
+12568	12695	7306542066939489	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	6dd0eca3c73dff55
+12568	12695	7306542066939489	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	6dd0eca3c73dff55
+12695	12807	7306542068090871	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	24d41625011c5f8
+12695	12807	7306542068090871	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	24d41625011c5f8
+12807	12911	7306542069125094	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	4307d65d2e410d6a
+12807	12911	7306542069125094	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	4307d65d2e410d6a
+12911	13014	7306542070162001	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	4594fcb9d5d7f708
+12911	13014	7306542070162001	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	4594fcb9d5d7f708
+13014	13133	7306542071330150	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	e47670520dc2697a
+13014	13133	7306542071330150	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	e47670520dc2697a
+13133	13325	7306542073269124	CMakeFiles/googletest-populate-complete	d0ea45245c570c81
+13133	13325	7306542073269124	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	d0ea45245c570c81
+13133	13325	7306542073269124	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	d0ea45245c570c81
+13133	13325	7306542073269124	C:/Users/Lexus/Desktop/LR1-main/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	d0ea45245c570c81
