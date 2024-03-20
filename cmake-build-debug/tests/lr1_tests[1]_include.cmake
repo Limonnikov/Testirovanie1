@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Lexus/LR1-main/Testirovanie1/cmake-build-debug/tests/lr1_tests[1]_tests.cmake")
+  include("C:/Users/Lexus/LR1-main/Testirovanie1/cmake-build-debug/tests/lr1_tests[1]_tests.cmake")
+else()
+  add_test(lr1_tests_NOT_BUILT lr1_tests_NOT_BUILT)
+endif()
