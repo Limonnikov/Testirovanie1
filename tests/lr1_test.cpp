@@ -26,7 +26,7 @@ TEST(myTests, CTest1) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../tests/Test1.json";
+    string way = "../../tests/Test1.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
 
     vector <string> testingCatchErrors;
@@ -39,7 +39,7 @@ TEST(myTests, CTest2) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../tests/Test2.json";
+    string way = "../../tests/Test2.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
     vector <pair<pair<int, float>, int> >   answer;
     sort(answer.begin(), answer.end());
@@ -57,7 +57,7 @@ TEST(myTests, CTest3) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../tests/Test3.json";
+    string way = "../../tests/Test3.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
     vector <pair<pair<int, float>, int> >   answer;
     sort(answer.begin(), answer.end());
@@ -77,7 +77,7 @@ TEST(myTests, CTest4_1) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../tests/Test4_1.json";
+    string way = "../../tests/Test4_1.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
     vector <pair<pair<int, float>, int> >   answer;
     sort(answer.begin(), answer.end());
@@ -98,7 +98,7 @@ TEST(myTests, CTest4_2) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../tests/Test4_2.json";
+    string way = "../../tests/Test4_2.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
     vector <pair<pair<int, float>, int> >   answer;
     sort(answer.begin(), answer.end());
@@ -121,7 +121,7 @@ TEST(myTests, CTest5_1) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../tests/Test5_1.json";
+    string way = "../../tests/Test5_1.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
     vector <pair<pair<int, float>, int> >   answer;
     sort(answer.begin(), answer.end());
@@ -139,7 +139,7 @@ TEST(myTests, CTest5_2) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../tests/Test5_2.json";
+    string way = "../../tests/Test5_2.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
     vector <pair<pair<int, float>, int> >   answer;
     sort(answer.begin(), answer.end());
@@ -158,7 +158,7 @@ TEST(myTests, CTest6_1) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../tests/Test6_1.json";
+    string way = "../../tests/Test6_1.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
     vector <pair<pair<int, float>, int> >   answer = func(freqMap, maxNum);
     sort(answer.begin(), answer.end());
@@ -166,7 +166,7 @@ TEST(myTests, CTest6_1) {
     vector <string> testingCatchErrors;
 
     vector <pair<pair<int, float>, int> >   testingAnswer;
-    ifstream file("../tests/Test6_1_Answer.json");
+    ifstream file("../../tests/Test6_1_Answer.json");
     json inputFile;
     file >> inputFile;
     for (auto& [key, value] : inputFile.items()) {
@@ -211,7 +211,7 @@ TEST(myTests, CTest7) {
     vector <string> catchErrors;
     unordered_map<float, pair<int,int>> freqMap;
     int maxNum = 0;
-    string way = "../../../tests/Test7.json";
+    string way = "../../tests/Test7.json";
     bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
     vector <pair<pair<int, float>, int> >   answer = func(freqMap, maxNum);
     sort(answer.begin(), answer.end());
@@ -219,7 +219,7 @@ TEST(myTests, CTest7) {
     vector <string> testingCatchErrors;
 
     vector <pair<pair<int, float>, int> >   testingAnswer;
-    ifstream file("../../../tests/Test7_Answer.json");
+    ifstream file("../../tests/Test7_Answer.json");
     json inputFile;
     file >> inputFile;
     for (auto& [key, value] : inputFile.items()) {
