@@ -2,72 +2,232 @@
 #include <gtest/gtest.h>
 #include <vector>
 #include <utility>
+#include <fstream>
 
 // Подробнее https://google.github.io/googletest/reference/testing.html
 
+
+
 // Тестовый класс
-class CountAndSumTest : public ::testing::Test {
+class myTests : public ::testing::Test {
 protected:
-    // Здесь вы можете добавить дополнительные настройки для тестов
-    // в функции SetUp()
     void SetUp() override {
-        // Например, инициализация данных
-        arr = {10, 14, 15, 20, 21, 25, 30};
-    }
 
-    // Здесь вы можете освободить ресурсы, если это необходимо
-    // в функции TearDown()
+    }
     void TearDown() override {
-        // Например, очистка данных
-        arr.clear();
-    }
 
-    // Объявляем переменные, которые будут использоваться в тестах
-    std::vector<int> arr;
-    std::pair<int, int> result;
+    }
 };
 
-// Пример теста1
-TEST_F(CountAndSumTest, CTest1) {
-// Вызываем функцию countAndSum с тестовыми данными
-    result = countAndSum(arr);
 
-// Проверяем ожидаемые результаты
-    EXPECT_EQ(result.first, 5);
-    EXPECT_EQ(result.second, 100);
+
+// Тест 1: файл отсутствует
+TEST(myTests, CTest1) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test1.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+
+    vector <string> testingCatchErrors;
+    testingCatchErrors.push_back("Can not open file");
+    EXPECT_EQ(catchErrors, testingCatchErrors);
 }
 
-// Пример теста111111
-TEST_F(CountAndSumTest, CTest11111) {
-// Вызываем функцию countAndSum с тестовыми данными
-    result = countAndSum(arr);
+// Тест 2:
+TEST(myTests, CTest2) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test2.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer;
+    sort(answer.begin(), answer.end());
 
-// Проверяем ожидаемые результаты
-    EXPECT_EQ(result.first, 5);
-    EXPECT_EQ(result.second, 100);
+    vector <string> testingCatchErrors;
+
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
 }
 
-// Пример теста 2
-TEST_F(CountAndSumTest, CTest2) {
-// Вызываем функцию countAndSum с тестовыми данными
-    result = countAndSum(arr);
+// Тест 3:
+TEST(myTests, CTest3) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test3.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer;
+    sort(answer.begin(), answer.end());
 
-// Проверяем ожидаемые результаты
-    EXPECT_EQ(result.first, 15);
-    EXPECT_EQ(result.second, 100);
+    vector <string> testingCatchErrors;
+    testingCatchErrors.push_back("Data is not a number");
+    testingCatchErrors.push_back("Data is not a number");
+
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
 }
 
-// Пример теста3
-TEST(CountAndSumTest1, CTest3) {
-    // Объявляем переменные, которые будут использоваться в тесте
-    std::vector<int> arr;
-    std::pair<int, int> result;
-    // Инициализация данных
-    arr = {10, 14, 15, 20, 21, 25, 30, 35, 5};
-// Вызываем функцию countAndSum с тестовыми данными
-    result = countAndSum(arr);
+// Тест 4:
+TEST(myTests, CTest4_1) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test4_1.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer;
+    sort(answer.begin(), answer.end());
 
-// Проверяем ожидаемые результаты
-    EXPECT_EQ(result.first, 6);
-    EXPECT_EQ(result.second, 105);
+    vector <string> testingCatchErrors;
+    testingCatchErrors.push_back("Value outside float range");
+    testingCatchErrors.push_back("Value outside float range");
+    testingCatchErrors.push_back("Value outside float range");
+
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
+}
+
+// Тест 5:
+TEST(myTests, CTest4_2) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test4_2.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer;
+    sort(answer.begin(), answer.end());
+
+    vector <string> testingCatchErrors;
+    testingCatchErrors.push_back("Value outside float range");
+    testingCatchErrors.push_back("Value outside float range");
+    testingCatchErrors.push_back("Value outside float range");
+
+    testingCatchErrors.push_back("Data is not a number");
+    testingCatchErrors.push_back("Data is not a number");
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
+}
+
+// Тест 6:
+TEST(myTests, CTest5_1) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test5_1.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer;
+    sort(answer.begin(), answer.end());
+
+    vector <string> testingCatchErrors;
+    testingCatchErrors.push_back("Array size is incorrect");
+
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
+}
+// Тест 7:
+TEST(myTests, CTest5_2) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test5_2.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer;
+    sort(answer.begin(), answer.end());
+
+    vector <string> testingCatchErrors;
+    testingCatchErrors.push_back("Data is not a number");
+    testingCatchErrors.push_back("Array size is incorrect");
+
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
+}
+// Тест 8:
+TEST(myTests, CTest6_1) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test6_1.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer = func(freqMap, maxNum);
+    sort(answer.begin(), answer.end());
+
+    vector <string> testingCatchErrors;
+
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+    ifstream file("Test6_1_Answer.json");
+    json inputFile;
+    file >> inputFile;
+    for (auto& [key, value] : inputFile.items()) {
+        testingAnswer.push_back(make_pair(make_pair(value[0], roundf(value[1].get<float>()*1000000)/1000000), value[2]));
+
+    }
+    file.close();
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
+}
+
+// Тест 9:
+TEST(myTests, CTest6_2) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test6_2.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer = func(freqMap, maxNum);
+    sort(answer.begin(), answer.end());
+
+    vector <string> testingCatchErrors;
+    testingCatchErrors.push_back("Data is not a number");
+    testingCatchErrors.push_back("Data is not a number");
+
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+    ifstream file("Test6_2_Answer.json");
+    json inputFile;
+    file >> inputFile;
+    for (auto& [key, value] : inputFile.items()) {
+        testingAnswer.push_back(make_pair(make_pair(value[0], roundf(value[1].get<float>()*1000000)/1000000), value[2]));
+
+    }
+    file.close();
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
+}
+// Тест 10:
+TEST(myTests, CTest7) {
+    vector <string> catchErrors;
+    unordered_map<float, pair<int,int>> freqMap;
+    int maxNum = 0;
+    string way = "Test7.json";
+    bool close = openAndReadFile(way, freqMap, maxNum, catchErrors);
+    vector <pair<pair<int, float>, int> >   answer = func(freqMap, maxNum);
+    sort(answer.begin(), answer.end());
+
+    vector <string> testingCatchErrors;
+
+    vector <pair<pair<int, float>, int> >   testingAnswer;
+    ifstream file("Test7_Answer.json");
+    json inputFile;
+    file >> inputFile;
+    for (auto& [key, value] : inputFile.items()) {
+        testingAnswer.push_back(make_pair(make_pair(value[0], value[1]), value[2]));
+
+    }
+    file.close();
+
+    EXPECT_EQ(answer, testingAnswer);
+    EXPECT_EQ(catchErrors, testingCatchErrors);
 }
