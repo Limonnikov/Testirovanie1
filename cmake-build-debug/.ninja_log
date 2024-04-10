@@ -44,3 +44,11 @@
 4334	8288	7337830785017265	tests/lr1_tests.exe	d9d4770debdc3e1
 4334	8288	7337830785017265	tests/lr1_tests[1]_tests.cmake	d9d4770debdc3e1
 4334	8288	7337830785017265	C:/Users/Lexus/LR1-main/Testirovanie1/cmake-build-debug/tests/lr1_tests[1]_tests.cmake	d9d4770debdc3e1
+7	4640	7338401539068006	bin/CMakeFiles/LR1.dir/main.cpp.obj	52b9031de5661c90
+4641	6598	7338401558192734	bin/LR1.exe	6dbb2b9d9f4502bf
+4	3367	7339308756942085	lib/CMakeFiles/lr1_lib.dir/lr1.cpp.obj	1f568b4f25962a31
+3368	4081	7339308764157488	lib/liblr1_lib.a	56103cff201c1501
+4081	4927	7339308772569816	bin/LR1.exe	6dbb2b9d9f4502bf
+5	4936	7339310629029736	tests/lr1_tests.exe	d9d4770debdc3e1
+5	4936	7339310629029736	tests/lr1_tests[1]_tests.cmake	d9d4770debdc3e1
+5	4936	7339310629029736	C:/Users/Lexus/LR1-main/Testirovanie1/cmake-build-debug/tests/lr1_tests[1]_tests.cmake	d9d4770debdc3e1

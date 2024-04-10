@@ -33,7 +33,7 @@ bool openAndReadFile(string way, unordered_map<float, pair<int,int>>& freqMap, i
         if (value.is_number()) {
             float floatValue = value.get<float>();
             if (floatValue <= numeric_limits<float>::max() && floatValue >= -numeric_limits<float>::max()) {
-                number = roundf(floatValue*1000000)/1000000;
+                number = floor(floatValue*1000000)/1000000;
                 //number = floatValue;
                 freqMap[number].first++;
                 if(freqMap[number].first == 1)
